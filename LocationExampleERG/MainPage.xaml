@@ -22,12 +22,16 @@
 
         <!--TitlePanel contains the name of the application and page title-->
         <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
-            <TextBlock x:Name="ApplicationTitle" Text="MY APPLICATION" Style="{StaticResource PhoneTextNormalStyle}"/>
-            <TextBlock x:Name="PageTitle" Text="page name" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+            <TextBlock x:Name="ApplicationTitle" Text="Location Example" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock x:Name="PageTitle" Text="Show Lat &amp; Long" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}" FontSize="60"/>
         </StackPanel>
 
         <!--ContentPanel - place additional content here-->
-        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0"></Grid>
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="10,0,14,0">
+            <TextBlock x:Name="longitude" HorizontalAlignment="Left" Margin="32,94,0,0" TextWrapping="Wrap" Text="Longitude:" VerticalAlignment="Top"/>
+            <Button Content="Get Coordinates" HorizontalAlignment="Left" Margin="56,182,0,0" VerticalAlignment="Top" Height="123" Width="338" Background="#FF34233F" Click="Button_Click_1"/>
+            <TextBlock x:Name="latitude" HorizontalAlignment="Left" Margin="32,62,0,0" TextWrapping="Wrap" Text="Latitude:" VerticalAlignment="Top"/>
+        </Grid>
     </Grid>
  
 </phone:PhoneApplicationPage>
